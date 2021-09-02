@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+/* b-header */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+/* b-header */
+.b-header {
+  height: 80px;
+  background-color: #0099cc;
+  color: #ffff;
+  align-items: center;
+  display: flex;
+}
+.b-header .container {
+  min-width: 960px;
+  margin: 0 auto;
+}
+.b-header .h1 {
+  font-size: 32px;
+}
+/* b-main */
+.b-main .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
