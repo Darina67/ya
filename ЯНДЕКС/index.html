@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/styles/main.css" />
     <style>
       @font-face {
         font-family: "Example-font";
@@ -40,8 +41,98 @@
   </head>
 
   <body>
-    <!-- добавьте вёрстку -->
-
+    <header class="b-header">
+      <div class="container">
+        <h1 class="h1">Магазин игрушек</h1>
+      </div>
+    </header>
+    <main class="b-main">
+      <div class="container">
+        <aside class="b-filter">
+          <div class="filter__item">
+            <div class="filter__title">Цвет</div>
+            <div class="filter__items">
+              <ul class="ul">
+                <li><input class="filter__input" type="checkbox" />Белый</li>
+                <li><input class="filter__input" type="checkbox" />Синий</li>
+                <li><input class="filter__input" type="checkbox" />Красный</li>
+                <li><input class="filter__input" type="checkbox" />Желтый</li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter__item">
+            <div class="filter__title">Размер</div>
+            <div class="filter__items">
+              <ul class="ul">
+                <li><input class="filter__input" type="checkbox" />Большой</li>
+                <li>
+                  <input class="filter__input" type="checkbox" />Маленький
+                </li>
+                <li><input class="filter__input" type="checkbox" />Средний</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+        <!-- section -->
+        <section class="b-section">
+          <div class="section__text">
+            <h1 class="section__title">Мягкие игрушки</h1>
+            <h3 class="section__subtitle">Все дети любят мягкие игрушки</h3>
+          </div>
+          <div class="b-category">
+            <div class="category__item">
+              <div class="category__title"><a href="#">Котики</a></div>
+              <div class="category__subtitle">Мяукают и ловят мышей</div>
+            </div>
+            <div class="category__item">
+              <div class="category__title"><a href="#">Медведи</a></div>
+              <div class="category__subtitle">Верные друзья</div>
+            </div>
+          </div>
+          <section class="b-section popular">
+            <h1 class="section__title">Популярные</h1>
+            <div class="b-toys">
+              <div class="toy">
+                <div class="toy__img">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkMAYAADkANVKH3ScAAAAASUVORK5CYII="
+                    alt="toy"
+                  />
+                </div>
+                <div class="toy__info">
+                  <div class="toy__title"><a href="#">Федор</a></div>
+                  <div class="toy__button"><a href="#">Купить</a></div>
+                </div>
+              </div>
+              <div class="toy">
+                <div class="toy__img">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkMAYAADkANVKH3ScAAAAASUVORK5CYII="
+                    alt="toy"
+                  />
+                </div>
+                <div class="toy__info">
+                  <div class="toy__title"><a href="#">Федор</a></div>
+                  <div class="toy__button"><a href="#">Купить</a></div>
+                </div>
+              </div>
+              <div class="toy">
+                <div class="toy__img">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkMAYAADkANVKH3ScAAAAASUVORK5CYII="
+                    alt="toy"
+                  />
+                </div>
+                <div class="toy__info">
+                  <div class="toy__title"><a href="#">Федор</a></div>
+                  <div class="toy__button"><a href="#">Купить</a></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
     <style>
       /* добавьте стили */
     </style>

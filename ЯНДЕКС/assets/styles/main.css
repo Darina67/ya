@@ -13,7 +13,7 @@ h6 {
 /* b-header */
 .b-header {
   height: 80px;
-  background-color: #0099cc;
+  background-color: #0099cc !important;
   color: #ffff;
   align-items: center;
   display: flex;
@@ -26,7 +26,108 @@ h6 {
   font-size: 32px;
 }
 /* b-main */
+.b-main {
+  overflow: hidden;
+}
 .b-main .container {
   max-width: 960px;
   margin: 0 auto;
+  margin-top: 24px;
+}
+/* b-filter */
+.b-filter {
+  width: 240px;
+  float: left;
+}
+.b-filter .ul {
+  list-style: none;
+  padding: 0;
+}
+/* section */
+.b-section {
+  display: inline-block;
+  width: 720px;
+}
+.b-section .section__text {
+  height: 96px;
+  margin-bottom: 12px;
+}
+.b-section h1.section__title {
+  font-size: 32px;
+}
+.b-section h3.section__subtitle {
+  font-size: 24px;
+  margin-top: 12px;
+}
+/* b-category */
+.b-category {
+  display: flex;
+  justify-content: space-between;
+}
+.b-category .category__item {
+  width: 348px;
+  height: 72px;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 12px;
+}
+.b-category .category__title a {
+  color: #0099cc;
+}
+.b-category .category__subtitle {
+  color: #666;
+}
+/* b-section popular */
+.b-section.popular {
+  margin-top: 12px;
+}
+.b-section.popular h1.section__title {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+/* b-toys */
+.b-toys {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.b-toys .toy {
+  display: flex;
+  float: left;
+  margin-top: 12px;
+  min-width: 228px;
+  min-height: 84px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.b-toys .toy:last-child {
+  margin-right: 0;
+}
+.b-toys .toy__img {
+  background-color: #ccc;
+  width: 60px;
+  height: 60px;
+  margin: 12px;
+}
+.b-toys .toy__info {
+  margin-top: 12px;
+}
+.b-toys .toy__title {
+  padding-bottom: 15px;
+}
+.b-toys .toy__title a {
+  color: #0099cc;
+}
+.b-toys .toy__button {
+  padding-bottom: 12px;
+  width: 72px;
+  height: 24px;
+  background-color: #ccc;
+  text-align: center;
+}
+.b-toys .toy__button a {
+  text-decoration: none;
+  color: #000;
 }
