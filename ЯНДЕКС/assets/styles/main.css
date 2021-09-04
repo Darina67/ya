@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 /* b-header */
 h1,
 h2,
@@ -10,6 +15,10 @@ h5,
 h6 {
   margin: 0;
 }
+.container {
+  width: 960px !important;
+  margin: 0 auto !important;
+}
 /* b-header */
 .b-header {
   height: 80px;
@@ -17,10 +26,6 @@ h6 {
   color: #ffff;
   align-items: center;
   display: flex;
-}
-.b-header .container {
-  min-width: 960px;
-  margin: 0 auto;
 }
 .b-header .h1 {
   font-size: 32px;
@@ -30,9 +35,7 @@ h6 {
   overflow: hidden;
 }
 .b-main .container {
-  max-width: 960px;
-  margin: 0 auto;
-  margin-top: 24px;
+  margin-top: 24px !important;
 }
 /* b-filter */
 .b-filter {
@@ -94,7 +97,7 @@ h6 {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.b-toys .toy {
+.b-toys .toys__toy {
   display: flex;
   float: left;
   margin-top: 12px;
@@ -102,32 +105,54 @@ h6 {
   min-height: 84px;
   background-color: rgba(0, 0, 0, 0.05);
 }
-.b-toys .toy:last-child {
+.b-toys .toys__toy:last-child {
   margin-right: 0;
 }
-.b-toys .toy__img {
+.b-toys .toys__toy-img {
   background-color: #ccc;
   width: 60px;
   height: 60px;
   margin: 12px;
 }
-.b-toys .toy__info {
+.b-toys .toys__toy-info {
   margin-top: 12px;
 }
-.b-toys .toy__title {
+.b-toys .toys__toy-title {
   padding-bottom: 15px;
 }
-.b-toys .toy__title a {
+.b-toys .toys__toy-title a {
   color: #0099cc;
 }
-.b-toys .toy__button {
+.b-toys .toys__toy-button {
   padding-bottom: 12px;
   width: 72px;
   height: 24px;
   background-color: #ccc;
   text-align: center;
 }
-.b-toys .toy__button a {
+.b-toys .toys__toy-button a {
   text-decoration: none;
   color: #000;
+}
+/* b-footer */
+.b-footer {
+  margin-top: auto;
+}
+.b-footer .container {
+  background-color: rgba(0, 0, 0, 0.05);
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.b-footer .footer__contact {
+  margin-left: 12px;
+}
+.b-footer .footer__contact a {
+  color: #666;
+  text-decoration: none;
+}
+.b-footer .footer__copyright {
+  margin-right: 12px;
+  color: #666;
 }
