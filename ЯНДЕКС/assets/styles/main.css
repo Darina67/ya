@@ -16,8 +16,9 @@ h6 {
   margin: 0;
 }
 .container {
-  width: 960px !important;
+  max-width: 960px !important;
   margin: 0 auto !important;
+  width: 100%;
 }
 /* b-header */
 .b-header {
@@ -66,9 +67,10 @@ h6 {
 .b-category {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .b-category .category__item {
-  width: 348px;
+  min-width: 348px;
   height: 72px;
   background-color: rgba(0, 0, 0, 0.05);
   padding-top: 15px;
@@ -99,7 +101,6 @@ h6 {
 }
 .b-toys .toys__toy {
   display: flex;
-  float: left;
   margin-top: 12px;
   min-width: 228px;
   min-height: 84px;
@@ -155,4 +156,38 @@ h6 {
 .b-footer .footer__copyright {
   margin-right: 12px;
   color: #666;
+}
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .b-header .container {
+    justify-content: start;
+  }
+  .b-filter {
+    display: none;
+  }
+  .b-footer {
+    display: none;
+  }
+  .b-header .h1 {
+    margin-left: 12px;
+  }
+  .b-toys .toys__toy {
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 516px) {
+  .b-category .category__item {
+    width: 100%;
+    margin-top: 12px;
+  }
+  .b-category .category__item:first-child {
+    margin-top: 0;
+  }
+  .container {
+    margin-left: 12px;
+    padding: 0 15px;
+  }
 }
